@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recycle Sorter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>♻️ Recycle Sorter</h1>
+    
+    <form id="itemForm">
+      <label>Item Name:</label>
+      <input type="text" id="itemName" required>
+
+      <label>Weight (kg):</label>
+      <input type="number" id="itemWeight" step="0.01" required>
+
+      <button type="submit">Add Item</button>
+    </form>
+
+    <h2>Sorted Items:</h2>
+    <ul id="resultList"></ul>
+
+    <div id="summary"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
